@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css page -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- media query -->
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>DecoStyle - Team</title>
+    <!-- logo -->
+    <link rel="icon" type="image/png" href="../img/logo2.png">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Go to Top -->
+    <div class="go-top">
+        <span>Go To Back Top</span>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal fade modal-search" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start nav bar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="Home.html">
+                <img src="../img/logo2.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                            Pages
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="position-absolute">
+                            <li style="transition-delay: 0.1s;"><a class="" href="product.html">Products</a></li>
+                            <li style="transition-delay: 0.2s;"><a class="" href="team.html">Team</a></li>
+                            <li style="transition-delay: 0.3s;"><a class="" href="team-details.html">Team Details</a>
+                            </li>
+                            <li style="transition-delay: 0.4s;"><a class="" href="faq.html">FAQ</a></li>
+                            <li style="transition-delay: 0.5s;"><a class="" href="testimonial.html">Testimonial</a></li>
+                            <li style="transition-delay: 0.6s;"><a class="" href="privacy.html">Privacy Policy</a></li>
+                            <li style="transition-delay: 0.7s;"><a class="" href="ComingSoon.html">Coming Soon</a></li>
+                            <li style="transition-delay: 0.8s;"><a class="" href="eror404.html">Error 404</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="search-box d-flex align-items-center justify-content-lg-center gap-3">
+                    <a href="login.html" class="btn login" id="main-btn"><span>Login</span></a>
+                    <span class="slash">/</span>
+                    <a href="register.html" class="btn login reg" id="main-btn"><span>Register</span></a>
+                    <button type="button" class="searchBtn d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="payment_content">
+                        <a type="button" class="searchBtn d-none d-lg-flex" href="payment.html">
+                            <i class="bi bi-cart4"></i>
+                        </a>
+                        <div class="payment_product">
+                            <div class="exist"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-box d-flex align-items-center justify-content-center gap-3">
+                <button type="button" class="searchBtn d-flex d-lg-none" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav bar -->
+
+    <!-- Start BreadCrumb -->
+    <div id="BreadCrumb">
+        <div class="container">
+            <p id="welcome">Business Models you can Consider</p>
+            <h2>Team</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Team</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- End BreadCrumb -->
+
+    <!-- Start Team -->
+    <div class="Team reveal padding_response">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="team-box">
+                        <div class="image">
+                            <div class="team_img img1">
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-vine vine"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <p>Teka dibe bacchu</p>
+                            <h3>Jessica Brown</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="team-box">
+                        <div class="image">
+                            <div class="team_img img2">
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-vine vine"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <p>Teka dibe bacchu</p>
+                            <h3>Jessica Brown</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="team-box">
+                        <div class="image">
+                            <div class="team_img img3">
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-vine vine"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <p>Teka dibe bacchu</p>
+                            <h3>Jessica Brown</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="team-box">
+                        <div class="image">
+                            <div class="team_img img4">
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-vine vine"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <p>Teka dibe bacchu</p>
+                            <h3>Jessica Brown</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="team-box">
+                        <div class="image">
+                            <div class="team_img img5">
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-vine vine"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <p>Teka dibe bacchu</p>
+                            <h3>Jessica Brown</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="team-box">
+                        <div class="image">
+                            <div class="team_img img6">
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-vine vine"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <p>Teka dibe bacchu</p>
+                            <h3>Jessica Brown</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
+
+    <!-- Start Footer -->
+    <footer class="site-footer padding_response">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 mb-3">
+                    <div class="footer-widget">
+                        <div class="footer-logo mb-4"><img src="../img/logo2.png" alt=""></div>
+                        <p>Eros vivamus platea nullam id consequat eu sociis lectus aliquam nibh auctor elitsed libero
+                            pharetra consequat and fad
+                            sociis conubia favorite to risus.</p>
+                        <p>Follow us:</p>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest-p pinterest"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="footer-widget">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Mobile App</a></li>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">SEO &amp; Marketing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="footer-widget">
+                                <h3>About Us</h3>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Me</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Get in Touch</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="footer-widget">
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <div class="copyRight d-flex align-items-center">
+                            <p>© 2024 Copyright <a href="Home.html">DecoStyle</a></p>
+                            <p>All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="policy">
+                            <ul class="d-flex align-items-center m-0 p-0 justify-content-end">
+                                <li><a href="privacy.html">Privacy & Policy</a></li>
+                                <li><a href="privacy.html">Terms of use</a></li>
+                                <li><a href="privacy.html">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <!-- bootstrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js page -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

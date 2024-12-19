@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css page -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- media query -->
+    <link rel="stylesheet" href="../css/media.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>DecoStyle - Coming Soon</title>
+    <!-- logo -->
+    <link rel="icon" type="image/png" href="../img/logo2.png">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Start Coming Soon Page -->
+    <div class="Coming_Soon padding_response">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="coming-content">
+                        <div class="big-title">We're Coming Soon...</div>
+                        <div class="timer-box d-flex align-items-center gap-5 mt-5 mb-5">
+                            <div class="digit-box">
+                                <div class="digit countDay">00</div>
+                                <div class="sub-digit">Days</div>
+                            </div>
+                            <div class="digit-box">
+                                <div class="digit countHour">00</div>
+                                <div class="sub-digit">Hours</div>
+                            </div>
+                            <div class="digit-box">
+                                <div class="digit CountMint">00</div>
+                                <div class="sub-digit">Minutes</div>
+                            </div>
+                            <div class="digit-box">
+                                <div class="digit countScend">00</div>
+                                <div class="sub-digit">Seconds</div>
+                            </div>
+                        </div>
+                        <p>
+                            Website is under construction. We'll be here soon with new
+                            <br>
+                            awesome site, Subscribe to be notified.
+                        </p>
+                        <div class="comson_subscribe">
+                            <form class="subscribe-form" action="#">
+                                <input placeholder="Enter your email address" type="email">
+                                <a id="mainBtn" href="#">Send Message</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Coming Soon Page -->
+
+    <!-- js page -->
+    <script src="../js/main.js"></script>
+    <!-- bootstrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Coming Soon 
+        let CountDownData = new Date("Dec 31, 2026 23:59:59").getTime();
+
+        let CounterDown = setInterval(() => {
+            let dataNow = new Date().getTime();
+            let datDiff = CountDownData - dataNow;
+
+            let days = Math.floor(datDiff / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((datDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((datDiff % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((datDiff % (1000 * 60)) / 1000);
+
+            document.querySelector(".countDay").innerHTML = days;
+            document.querySelector(".countHour").innerHTML = hours;
+            document.querySelector(".CountMint").innerHTML = minutes;
+            document.querySelector(".countScend").innerHTML = seconds;
+
+            if (datDiff < 0) {
+                clearInterval(CounterDown);
+                document.querySelector(".countDay").innerHTML = "00";
+                document.querySelector(".countHour").innerHTML = "00";
+                document.querySelector(".CountMint").innerHTML = "00";
+                document.querySelector(".countScend").innerHTML = "00";
+            }
+        }, 1000)
+    </script>
+</body>
+
+</html>

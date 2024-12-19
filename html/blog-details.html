@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css page -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- media query -->
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>DecoStyle - Blog Details</title>
+    <!-- logo -->
+    <link rel="icon" type="image/png" href="../img/logo2.png">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Go to Top -->
+    <div class="go-top">
+        <span>Go To Back Top</span>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal fade modal-search" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start nav bar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="Home.html">
+                <img src="../img/logo2.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                            Pages
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="position-absolute">
+                            <li style="transition-delay: 0.1s;"><a class="" href="product.html">Products</a></li>
+                            <li style="transition-delay: 0.2s;"><a class="" href="team.html">Team</a></li>
+                            <li style="transition-delay: 0.3s;"><a class="" href="team-details.html">Team Details</a>
+                            </li>
+                            <li style="transition-delay: 0.4s;"><a class="" href="faq.html">FAQ</a></li>
+                            <li style="transition-delay: 0.5s;"><a class="" href="testimonial.html">Testimonial</a></li>
+                            <li style="transition-delay: 0.6s;"><a class="" href="privacy.html">Privacy Policy</a></li>
+                            <li style="transition-delay: 0.7s;"><a class="" href="ComingSoon.html">Coming Soon</a></li>
+                            <li style="transition-delay: 0.8s;"><a class="" href="eror404.html">Error 404</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="search-box d-flex align-items-center justify-content-lg-center gap-3">
+                    <a href="login.html" class="btn login" id="main-btn"><span>Login</span></a>
+                    <span class="slash">/</span>
+                    <a href="register.html" class="btn login reg" id="main-btn"><span>Register</span></a>
+                    <button type="button" class="searchBtn d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="payment_content">
+                        <a type="button" class="searchBtn d-none d-lg-flex" href="payment.html">
+                            <i class="bi bi-cart4"></i>
+                        </a>
+                        <div class="payment_product">
+                            <div class="exist"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-box d-flex align-items-center justify-content-center gap-3">
+                <button type="button" class="searchBtn d-flex d-lg-none" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav bar -->
+
+    <!-- Start BreadCrumb -->
+    <div id="BreadCrumb">
+        <div class="container">
+            <p id="welcome">Business Models you can Consider</p>
+            <h2>Blog Details</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- End BreadCrumb -->
+
+    <!-- Start Blog Details -->
+    <div class="blog_details reveal padding_response">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="blog_details_left">
+                        <div class="blgDt_image">
+                            <img src="../img/furniture-gallery_01.jpg" alt="">
+                        </div>
+                        <div class="blgDt_content">
+                            <div class="meta d-flex align-items-center justify-content-between">
+                                <ul class="d-flex align-items-center gap-4 m-0 p-0">
+                                    <li>
+                                        <i class="bi bi-person ms-3"></i>
+                                        <span>By Admin</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-chat-square-text ms-3"></i>
+                                        <span>{6}Comments</span>
+                                    </li>
+                                </ul>
+                                <div class="share">
+                                    <i class="bi bi-share-fill"></i>
+                                </div>
+                            </div>
+                            <h3 class="blgDt_Title1">Transforming challenges into opportunities with IT.</h3>
+                            <p class="text1">Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia nulla.
+                                Aliquam quis purus in justo pulvinar tempor.
+                                Aliquam tellus nulla, sollicitudin at euismod nec, feugiat at nisi. Quisque vitae odio nec
+                                lacus interdum tempus.
+                                Phasellus a rhoncus erat. Vivamus vel eros vitae</p>
+                            <p class="text2">Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia nulla.
+                                Aliquam quis purus in justo pulvinar tempor.
+                                Aliquam tellus nulla, sollicitudin at euismod nec, feugiat at nisi. Quisque vitae odio nec
+                                lacus interdum tempus.
+                                Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae et nunc. Sed
+                                vitae leo vitae nisl
+                                pellentesque semper euismod justo</p>
+                        </div>
+                        <div class="tag_box d-flex align-items-center gap-5">
+                            <p>Tags :</p>
+                            <div class="tag-list d-flex align-items-center gap-3 flex-wrap">
+                                <a href="#">Graphics</a>
+                                <a href="#">Cargo</a>
+                                <a href="#">Blog</a>
+                            </div>
+                        </div>
+                        <div class="client_info">
+                            <div class="image">
+                                <img src="../img/blog-details-client-img.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Kevin Martin</h3>
+                                <p>Lacinia amet nisi ullamcorper eu suspendisse. Mattis nisl dignissim accumsan consectetur
+                                    suspendisse amet.</p>
+                                <div class="social">
+                                    <p>Share :</p>
+                                    <div>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination_box">
+                            <ul class="m-0 p-0 d-flex align-items-center justify-content-between">
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                                    <p>Cargo flow through better <br> supply in UK</p>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                                    <p>Cargo flow through better <br> supply in UK</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="comment_one">
+                            <h3 class="comment-title">Recent Comments</h3>
+                            <div class="comment-single">
+                                <div class="image">
+                                    <img src="../img/comment-1-1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>Richard Smith</h3>
+                                    <span>September 19, 2025</span>
+                                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusant laudantium, totam
+                                        rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo</p>
+                                    <a href="#" class="reply">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comment-single child">
+                                <div class="image">
+                                    <img src="../img/comment-1-1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>Richard Smith</h3>
+                                    <span>September 19, 2025</span>
+                                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusant laudantium, totam
+                                        rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo</p>
+                                    <a href="#" class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_form">
+                            <h3 class="comment-title">Leave A Comment</h3>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="box-form">
+                                            <input type="text" name="" id="" placeholder="Name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="box-form">
+                                            <input type="email" name="" id="" placeholder="Email*">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="box-form">
+                                            <textarea name="" placeholder="Your Comment" id=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="checked_box mb-3">
+                                            <input type="checkbox" id="check1" name="check1" class="check-input" checked>
+                                            <label for="check1">
+                                                <span></span>
+                                                Save my name, email & website in this browser for the next time I comment.
+                                            </label>
+                                        </div>
+                                        <a id="mainBtn" href="#">Learn More <i class="bi bi-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="blog_details_right">
+                        <div class="sidebar_search">
+                            <form action="">
+                                <input type="text" name="search" id="search" placeholder="Search...">
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="latest_bost">
+                            <h3 class="sidebar-title">Latest Post</h3>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <div class="image">
+                                        <img src="../img/lp-1-1.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            July 24, 2024
+                                        </p>
+                                        <h3>
+                                            <a href="blog details.html">Top crypto exchange influencers</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="../img/lp-1-2.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            July 24, 2024
+                                        </p>
+                                        <h3>
+                                            <a href="blog details.html">Top crypto exchange influencers</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="image">
+                                        <img src="../img/lp-1-3.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            July 24, 2024
+                                        </p>
+                                        <h3>
+                                            <a href="blog details.html">Top crypto exchange influencers</a>
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all_category">
+                            <h3 class="sidebar-title">Categories</h3>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <a href="#">New Technologies<span>(07)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Construction Introductions<span>(05)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Instralation Accecories<span>(03)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Business Advice<span>(07)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Payment Processing<span>(08)</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Corporate Standup<span>(04)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="have_query">
+                            <h3>Have Any Query?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <a id="mainBtn" href="#">Send Message</a>
+                        </div>
+                        <div class="tags">
+                            <h3 class="sidebar-title">Tags</h3>
+                            <div class="tags-list">
+                                <a href="#">All Project</a>
+                                <a href="#">Interiour</a>
+                                <a href="#">Business</a>
+                                <a href="#">Graphics</a>
+                                <a href="#">Cargo</a>
+                                <a href="#">Maintenance</a>
+                                <a href="#">Consulting</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Details -->
+
+    <!-- Start Footer -->
+    <footer class="site-footer padding_response">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 mb-3">
+                    <div class="footer-widget">
+                        <div class="footer-logo mb-4"><img src="../img/logo2.png" alt=""></div>
+                        <p>Eros vivamus platea nullam id consequat eu sociis lectus aliquam nibh auctor elitsed libero
+                            pharetra consequat and fad
+                            sociis conubia favorite to risus.</p>
+                        <p>Follow us:</p>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest-p pinterest"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="footer-widget">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Mobile App</a></li>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">SEO &amp; Marketing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="footer-widget">
+                                <h3>About Us</h3>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Me</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Get in Touch</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="footer-widget">
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <div class="copyRight d-flex align-items-center">
+                            <p>© 2024 Copyright <a href="Home.html">DecoStyle</a></p>
+                            <p>All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="policy">
+                            <ul class="d-flex align-items-center m-0 p-0 justify-content-end">
+                                <li><a href="privacy.html">Privacy & Policy</a></li>
+                                <li><a href="privacy.html">Terms of use</a></li>
+                                <li><a href="privacy.html">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <!-- bootstrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js page -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
